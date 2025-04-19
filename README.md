@@ -1,14 +1,16 @@
-# Vertical Logo Marquee
+![Marquee Horizontal React Cover](./public/cover.png)
 
-A modern React component that displays logos in a smooth vertical scrolling marquee animation. This project demonstrates the implementation of an elegant UI component using React and Framer Motion.
+# Marquee Horizontal React
+
+A modern React component that displays logos in a smooth horizontal scrolling marquee animation. This project demonstrates the implementation of an elegant UI component using React and Framer Motion.
 
 ## Live Demo
 
-Visit the live demo: [https://vertical-logo-marquee-ui.windsurf.build](https://vertical-logo-marquee-ui.windsurf.build)
+Visit the live demo: [https://marquee-horizontal-react.windsurf.build](https://marquee-horizontal-react.windsurf.build)
 
 ## Features
 
-- Smooth vertical scrolling animation
+- Smooth horizontal scrolling animation
 - Responsive design
 - Customizable speed and direction
 - Built with React and Framer Motion
@@ -27,18 +29,18 @@ This project was built using modern React practices including functional compone
 
 ### Key Components
 
-- `VerticalLogoMarquee`: The main component that implements the vertical scrolling animation
-- `LogoMarquee`: A horizontal variant of the marquee component
-- Custom utility functions for animation control
+- `LogoMarquee`: El componente principal que implementa la animación de desplazamiento horizontal
+- `VerticalLogoMarquee`: Una variante vertical del componente marquee
+- Funciones de utilidad personalizadas para el control de la animación
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/vertical-logo-marquee.git
+git clone https://github.com/alexanderuk82/marquee-horizontal-react.git
 
 # Navigate to the project directory
-cd vertical-logo-marquee
+cd marquee-horizontal-react
 
 # Install dependencies
 npm install
