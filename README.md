@@ -1,4 +1,4 @@
-![Marquee Horizontal React Cover](./public/cover.png)
+![Marquee Horizontal React Cover](./public/cover.png.jpg)
 
 # Marquee Horizontal React
 
