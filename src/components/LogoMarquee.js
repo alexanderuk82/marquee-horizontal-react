@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./LogoMarquee.css";
 
 // Testimonial component
@@ -73,13 +73,26 @@ const TestimonialMarquee = () => {
   // Duplicate testimonials for a continuous effect
   const allTestimonials = [...testimonials, ...testimonials];
   
+  // Detectar si es un dispositivo móvil
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="testimonial-section">
       <div className="testimonial-header">
         <h2>Testimonial Marquee Component</h2>
         <p>A React component with vanilla CSS and JS by Alexander 🧑‍💻</p>
       </div>
-      <div className="horizontal-marquee-container">
+      <div className={`horizontal-marquee-container ${isMobile ? 'mobile-view' : ''}`}>
         <div className="horizontal-marquee">
           <div className="horizontal-marquee-content">
             {allTestimonials.map((testimonial, index) => (

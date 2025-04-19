@@ -61,7 +61,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 100px; /* Altura por defecto para desktop */
   pointer-events: none;
   z-index: 2;
 }
@@ -74,4 +74,23 @@
 .vertical-marquee-container::after {
   bottom: 0;
   background: linear-gradient(to top, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0) 100%);
+}
+
+/* Media queries para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+  .vertical-marquee-container::before,
+  .vertical-marquee-container::after {
+    height: 60px; /* Altura reducida para tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .vertical-marquee-container::before,
+  .vertical-marquee-container::after {
+    height: 40px; /* Altura aún más reducida para móviles */
+  }
+  
+  .vertical-marquee-container {
+    height: 450px; /* Ajustar la altura del contenedor para móviles */
+  }
 }
